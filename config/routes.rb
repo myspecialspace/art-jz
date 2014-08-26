@@ -1,4 +1,11 @@
 ArtJz::Application.routes.draw do
+  root "pages#home"
+  get "lessons" => "pages#lessons"
+  get "gallery" => "pages#gallery"
+  get "events" => "pages#events"
+  get "blog" => "pages#blog"
+  get "contacts" => "pages#contacts"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

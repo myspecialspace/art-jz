@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ArtJz</title>
+  <title>art-jz</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+		<%= link_to "Home", root_path %>
+		<%= link_to "Lessons", lessons_path %>
+		<%= link_to "Gallery", gallery_path %>
+		<%= link_to "Events", events_path %>
+		<%= link_to "Blog", blog_path %>
+		<%= link_to "Contacts", contacts_path %>
+		<%= yield %>
 
 </body>
 </html>
