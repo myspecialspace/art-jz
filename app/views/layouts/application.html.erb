@@ -8,14 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+        <div class="container">
+            <div class="brand">Студия живописи и рисунка Жанны Завидовой</div>
+            <div class="address-bar">ул. Покровка, д.27 | +7 916 657 57 19</div>
+    		</div>
+        		
+    				<%= render 'layouts/header' %>
+            <div class="container">
+    		          <%= yield %>
+    		    </div>
+
+    		    <%= render 'layouts/footer' %>
         
-				<%= render 'layouts/header' %>
-
-				<div class="container">
-		          <%= yield %>
-		    </div>
-
-		    <%= render 'layouts/footer' %>
-
 </body>
 </html>

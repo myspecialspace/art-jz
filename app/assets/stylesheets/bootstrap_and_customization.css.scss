@@ -1,9 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-$body-bg:                                   image-url('http://startbootstrap.com/templates/business-casual/img/bg.jpg');
+
+
+$body-bg:                                   #9b59b6;
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-height:                                        45px;
-$navbar-default-bg:                          white;
+$navbar-height:                                        60px;
+$navbar-default-bg:                          #ecf0f1;
 $navbar-default-brand-color:      #c0392b;
 $brand-primary:                                    #3498db;
 $jumbotron-bg:                                         #ecf0f1;
@@ -14,12 +16,53 @@ $jumbotron-bg:                                         #ecf0f1;
      text-align: center;
 }
 
+.brand {
+display: inherit;
+margin: 0;
+padding: 30px 0 10px;
+text-align: center;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 3em;
+font-weight: 600;
+line-height: normal;
+color: #fff;
+}
+
+.address-bar {
+display: inherit;
+margin: 0;
+padding: 0 0 40px;
+text-align: center;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+text-transform: uppercase;
+font-size: 1.25em;
+font-weight: 400;
+letter-spacing: 3px;
+color: #fff;
+}
+
 .navbar-brand {
      font-weight: bold;
+     
+}
+
+.navbar{
+text-align: center;
+}
+
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
 }
 
 .row {
-margin-right: -15px;
-margin-left: -15px;
+	color: white;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
