@@ -98,10 +98,13 @@ text-align: center;
 }
 
 .col-md-4{
-text-align: left;
-min-height: 1px;
-padding-right: 15px;
-padding-left: 15px;
+  text-align: left;
+  min-height: 1px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
+.col-md-12{
+  text-align: left;
+}
 
