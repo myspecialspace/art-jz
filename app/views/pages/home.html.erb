@@ -1,41 +1,67 @@
-<div class="container">      
+<div class="container">    
+
       <div class="jumbotron center">
+
         	<div class="box">
-                <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
+                    <div class="col-lg-12 text-center">
+                        <div id="carousel-example-generic" class="carousel slide">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators hidden-xs">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive img-full" src=<%= asset_path('slide-1.jpg') %>/>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive img-full" src=<%= asset_path('slide-2.jpg') %>/>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive img-full" src=<%= asset_path('slide-3.jpg') %>/>
+                                </div>
                             </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
-                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="icon-prev"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="icon-next"></span>
+                            </a>
                         </div>
+                    </div></br>
+                    
+                    <h2>Какие-то вводные слова о студии?</h2></br>
 
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
+                    <div class="col-lg-12">
+                        <hr>
+                        <h2 class="intro-text text-center">О преподавателе</br></h2>
+                        <hr>
+                    </div></br>
+
+                    <div class="featurette" id="services">
+                        <img class="featurette-image img-circle img-responsive pull-left" src=<%= asset_path('Janna.jpg') %>/></br>
+                        <h3 class="featurette-heading text-left">Завидова Жанна Борисовна</br>
+                        </h3>
+                        <p class="lead text-left">
+                            Закончила МГАХИ им Сурикова (1989-1995 гг.),</br>
+                            Отделение станковой графики</br>
+                            С 1995 по 1997 г. - стипендиат Академии Художеств РФ</br>
+                            С 1995 г. - участник различных выставок в России и за рубежом</br>
+                            Работы находятся в частных собраниях России, Швейцарии, США</br>
+                            В 2008 г. создала авторскую студию живописи и рисунка.</br>
+                        </p>
                     </div>
-                </div>
+
+                    <div class="clearfix"></div>
             </div>
-      	
-       
+           
       </div>
 </div>
 
 
+                        
