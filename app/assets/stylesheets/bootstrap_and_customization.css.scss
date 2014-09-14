@@ -114,6 +114,20 @@ letter-spacing: 3px;
   text-align: left;
 }
 
+.col-lg-12{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.col-lg-4, .col-sm-6{
+  margin-top: 20px;
+  .img-responsive {
+    margin-left: 55px;  
+    height: auto;
+  }
+}
+
+
 h1, h2, h3 {
 margin-top: 20px;
 margin-bottom: 20px;
@@ -146,13 +160,12 @@ border-style: inset;
 border-width: 1px;
 }
 
-
 .featurette-image.pull-left {
 margin-right: 40px;
 }
 
-.pull-left {
-float: left!important;
+img {
+vertical-align: middle;
 }
 
 
