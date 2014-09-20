@@ -162,10 +162,21 @@ border-width: 1px;
 
 .featurette-image.pull-left {
 margin-right: 40px;
+margin-top: -20px;
 }
 
 img {
 vertical-align: middle;
+}
+
+.img-border {
+float: none;
+margin: 0 auto 0;
+border: #999999 solid 1px;
+}
+
+.img-full {
+min-width: 100%;
 }
 
 
