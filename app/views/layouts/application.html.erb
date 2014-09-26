@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -24,6 +25,35 @@
             </div>
 
     		    <%= render 'layouts/footer' %>
-        
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+                        $(document).ready(function(){
+                            $('.center').slick({
+                                    centerMode: true,
+                                    infinite: true,
+                                    centerPadding: '60px',
+                                    slidesToShow: 3,
+                                    responsive: [{
+                                        breakpoint: 768,
+                                        settings: {
+                                            arrows: false,
+                                            centerMode: true,
+                                            centerPadding: '40px',
+                                            slidesToShow: 3
+                                        }
+                                    }, {
+                                        breakpoint: 480,
+                                        settings: {
+                                            arrows: false,
+                                            centerMode: true,
+                                            centerPadding: '40px',
+                                            slidesToShow: 1
+                                        }
+                                    }]
+                            });
+                        });
+        </script>
 </body>
 </html>

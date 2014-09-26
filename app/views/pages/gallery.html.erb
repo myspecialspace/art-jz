@@ -2,8 +2,47 @@
 		<div class="jumbotron center">
          <div class="box">
                   
+							    <div class="slider center'">
+							        <div><h3>1</h3></div>
+											<div><h3>2</h3></div>
+											<div><h3>3</h3></div>
+											<div><h3>4</h3></div>
+											<div><h3>5</h3></div>
+											<div><h3>6</h3></div>
+							    </div>
+
+								  <pre><code>
+												$('.center').slick({
+												  centerMode: true,
+												  centerPadding: '60px',
+												  slidesToShow: 3,
+												  responsive: [
+												    {
+												      breakpoint: 768,
+												      settings: {
+												        arrows: false,
+												        centerMode: true,
+												        centerPadding: '40px',
+												        slidesToShow: 3
+												      }
+												    },
+												    {
+												      breakpoint: 480,
+												      settings: {
+												        arrows: false,
+												        centerMode: true,
+												        centerPadding: '40px',
+												        slidesToShow: 1
+												      }
+												    }
+												  ]
+												});
+				            </code></pre> 
+
+								    
+
                   <div class="clearfix"></div>
-		       </div>
+		      </div>
 		 
 		</div>
 </div>		
