@@ -5,31 +5,33 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 </head>
 <body>
         <div class="container">
             <div class="brand">Студия живописи и рисунка Жанны Завидовой</div>
             <div class="address-bar">ул. Покровка, д.27 | +7 916 657 57 19</div>
-    		</div>
+    	</div>
         		
-    				<%= render 'layouts/header' %>
-            <div class="container">
-    		          <%= yield %>
-    		    </div>
+		<%= render 'layouts/header' %>
+        <div class="container">
+		          <%= yield %>
+		</div>
 
-            <div class="panel-heading center">
-                 <a href="https://www.facebook.com/groups/409745725725001/" class="ig-b- ig-b-48"><img src="http://www.iconsdb.com/icons/preview/white/facebook-3-l.png" alt="Facebook"></a>
-                 <a href="http://instagram.com/artjz.studia" class="ig-b- ig-b-48"><img src="http://www.iconsdb.com/icons/preview/white/instagram-l.png" alt="Instagram"></a>
-            </div>
+        <div class="panel-heading center">
+             <a href="https://www.facebook.com/groups/409745725725001/" class="ig-b- ig-b-48"><img src="http://www.iconsdb.com/icons/preview/white/facebook-3-l.png" alt="Facebook"></a>
+             <a href="http://instagram.com/artjz.studia" class="ig-b- ig-b-48"><img src="http://www.iconsdb.com/icons/preview/white/instagram-l.png" alt="Instagram"></a>
+        </div>
 
-    		    <%= render 'layouts/footer' %>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
+                
+
+    	<%= render 'layouts/footer' %>
+        
         <script type="text/javascript">
-                        $(document).ready(function(){
                             $('.center').slick({
                                     centerMode: true,
                                     infinite: true,
@@ -53,7 +55,7 @@
                                         }
                                     }]
                             });
-                        });
+                        
         </script>
 </body>
 </html>
