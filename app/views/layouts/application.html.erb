@@ -24,14 +24,14 @@
              <a href="http://instagram.com/artjz.studia" class="ig-b- ig-b-48"><img src="http://www.iconsdb.com/icons/preview/white/instagram-l.png" alt="Instagram"></a>
         </div>
 
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <%= render 'layouts/footer' %>
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
-                
-
-    	<%= render 'layouts/footer' %>
         
         <script type="text/javascript">
+                        $(document).ready(function(){
                             $('.center').slick({
                                     centerMode: true,
                                     infinite: true,
@@ -55,7 +55,7 @@
                                         }
                                     }]
                             });
-                        
+                        });
         </script>
 </body>
 </html>
