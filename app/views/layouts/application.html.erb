@@ -9,6 +9,16 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 </head>
 <body>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script> <!-- #Facebook JavaScript SDK -->
+
         <div class="container">
             <div class="brand">Студия живописи и рисунка Жанны Завидовой</div>
             <div class="address-bar">ул. Покровка, д.27 | +7 916 657 57 19 |
@@ -18,19 +28,19 @@
               <a href="#" class="ig-b-48 ig-b-48" target="_blank"><img src="http://www.iconsdb.com/icons/preview/white/youtube-3-m.png" alt="Youtube"></a>
             </div>
             
-    	  </div>
+    	  </div><!-- #container --> 
         		
 		    <%= render 'layouts/header' %>
         <div class="container">
 		          <%= yield %>
-		    </div>
+		    </div><!-- #container --> 
 
         <div class="panel-heading center">
              <a href="https://www.facebook.com/groups/409745725725001/" class="ig-b-48 ig-b-48" target="_blank"><img src="http://www.iconsdb.com/icons/preview/white/facebook-3-l.png" alt="Facebook"></a>
              <a href="#" class="ig-b-48 ig-b-48" target="_blank"><img src=<%= asset_path('vk.png')%> alt="Vkontakte" /></a>
              <a href="http://instagram.com/artjz.studia" class="ig-b- ig-b-48" target="_blank"><img src="http://www.iconsdb.com/icons/preview/white/instagram-l.png" alt="Instagram"></a>
              <a href="#" class="ig-b-48 ig-b-48" target="_blank"><img src="http://www.iconsdb.com/icons/preview/white/youtube-3-l.png" alt="Youtube"></a>
-        </div>
+        </div><!-- #panel-heading center --> 
 
         <%= render 'layouts/footer' %>
         
