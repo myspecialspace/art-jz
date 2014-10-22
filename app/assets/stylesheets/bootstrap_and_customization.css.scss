@@ -1,4 +1,27 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+/* 
+Project Name: art-jz
+Client: art-jz.ru
+Author: Ekaterina Kuznetsova
+*/
+
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto:700italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption:400italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:700italic&subset=latin,cyrillic);
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
 
 .clear {
   clear: both;
@@ -6,7 +29,7 @@
 
 body {
 font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-background: url('../img/bg.jpg') no-repeat center center fixed;
+background: url('../images/bg.jpg') no-repeat center center fixed;
 background-image: url(http://startbootstrap.com/templates/business-casual/img/bg.jpg);
 background-position-x: 50%;
 background-position-y: 50%;
@@ -24,12 +47,13 @@ background-size: cover;
 }
 
 
-$font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif:                "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $navbar-height:                                        70px;
 $navbar-default-bg:                          rgba(255,255,255,0.9);
 $navbar-default-brand-color:      #c0392b;
 $brand-primary:                                    #3498db;
 $jumbotron-bg:                                         rgba(255,255,255,0.9);
+
 
 @import 'bootstrap';
 
@@ -37,18 +61,59 @@ $jumbotron-bg:                                         rgba(255,255,255,0.9);
      text-align: center;
 }
 
-.brand {
-display: inherit;
-margin: 0;
-padding: 30px 0 10px;
-text-align: center;
-text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-font-size: 3em;
-font-weight: 600;
-line-height: normal;
-color: #fff;
+h1, h2 {
+margin-top: 20px;
+margin-bottom: 20px;
 }
+
+h2 {
+  font: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+hr {
+max-width: 400px;
+border-color: #999999;
+margin-top: 20px;
+margin-bottom: 20px;
+border: 0;
+border-top: 1px solid #eee;
+height: 0;
+box-sizing: content-box;
+display: block;
+-webkit-margin-before: 0.5em;
+-webkit-margin-after: 0.5em;
+-webkit-margin-start: auto;
+-webkit-margin-end: auto;
+border-style: inset;
+border-width: 1px;
+}
+
+
+.container {
+  margin: 0 auto 0 auto;
+}
+
+
+/*----------------------------------------------------------------------------- 
+02=BRAND CONTAINER   
+-----------------------------------------------------------------------------*/
+.brand{
+  font-family: 'Noto Sans', sans-serif;
+  display: inherit;
+  margin: 0;
+  padding: 30px 0 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-size: 3em;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+}
+
 
 .address-bar {
 display: inherit;
@@ -63,10 +128,9 @@ letter-spacing: 3px;
 color: #fff;
 }
 
-.navbar-brand {
-     font-weight: bold;
-     
-}
+/*----------------------------------------------------------------------------- 
+03=NAVBAR 
+-----------------------------------------------------------------------------*/
 
 .navbar{
 text-align: center;
@@ -87,8 +151,12 @@ font-weight: 400;
 letter-spacing: 3px;
 }
 
+/*----------------------------------------------------------------------------- 
+04=LAYOUT (JUMBOTRON CONTAINER)  
+-----------------------------------------------------------------------------*/
+  
 .row {
-	color: white;
+  color: white;
   margin-right: 15px;
   margin-left: 15px;
 }
@@ -100,7 +168,7 @@ letter-spacing: 3px;
 }
 
 @media (min-width: 992px){
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11{
   float: left;
   }
 }
@@ -113,7 +181,7 @@ letter-spacing: 3px;
 }
 
 .col-md-12{
-  text-align: left;
+  text-align: justify;
 }
 
 .col-lg-12{
@@ -129,37 +197,17 @@ letter-spacing: 3px;
   }
 }
 
+.col-lg-4, .col-sm-6 p{
+    text-align: justify;
+}  
 
-h1, h2, h3 {
-margin-top: 20px;
-margin-bottom: 20px;
-}
+.col-lg-4, .col-sm-6 h3{
+    text-align: center;
+}   
 
-hr {
-max-width: 400px;
-border-color: #999999;
-}
-
-hr {
-margin-top: 20px;
-margin-bottom: 20px;
-border: 0;
-border-top: 1px solid #eee;
-}
-
-hr {
-height: 0;
-box-sizing: content-box;
-}
-
-hr {
-display: block;
--webkit-margin-before: 0.5em;
--webkit-margin-after: 0.5em;
--webkit-margin-start: auto;
--webkit-margin-end: auto;
-border-style: inset;
-border-width: 1px;
+.col-md-10{
+  text-align: justify;
+  margin-left: 85px;
 }
 
 .featurette-image.pull-left {
@@ -180,8 +228,6 @@ border: #999999 solid 1px;
 .img-full {
 min-width: 100%;
 }
-
-  
 
 
 
