@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready ->
-  $(".center").slick
+  $("#gallery").slick
     centerMode: true
     infinite: true
     centerPadding: "60px"
