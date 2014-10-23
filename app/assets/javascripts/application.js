@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= jquery-migrate-1.2.1.min
 //= require bootstrap
-//= require turbolinks
 //= require slick
-//= require_tree .
+//= require pages 
+
