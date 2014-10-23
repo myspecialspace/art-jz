@@ -6,9 +6,9 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-</head>
+</head><!-- #HEAD --> 
 <body>
 
         <div id="fb-root"></div>
@@ -29,22 +29,23 @@
               <a href="#" class="ig-b-48 ig-b-48" target="_blank"><img src="http://www.iconsdb.com/icons/preview/white/youtube-3-m.png" alt="Youtube"></a>
             </div>
             
-    	  </div><!-- #container --> 
+    	  </div><!-- #BRAND container --> 
         		
-		    <%= render 'layouts/header' %>
+		    <%= render 'layouts/header' %> <!-- Link to Header page --> 
         <div class="container">
 		          <%= yield %>
-		    </div><!-- #container --> 
+		    </div><!-- #container after header --> 
 
         <div class="panel-heading center">
              <a href="https://www.facebook.com/groups/409745725725001/" class="ig-b-48 ig-b-48" target="_blank"><img src="http://www.iconsdb.com/icons/preview/white/facebook-3-l.png" alt="Facebook"></a>
              <a href="#" class="ig-b-48 ig-b-48" target="_blank"><img src=<%= asset_path('vk.png')%> alt="Vkontakte" /></a>
              <a href="http://instagram.com/artjz.studia" class="ig-b- ig-b-48" target="_blank"><img src="http://www.iconsdb.com/icons/preview/white/instagram-l.png" alt="Instagram"></a>
              <a href="#" class="ig-b-48 ig-b-48" target="_blank"><img src="http://www.iconsdb.com/icons/preview/white/youtube-3-l.png" alt="Youtube"></a>
-        </div><!-- #panel-heading center --> 
+        </div><!-- #panel-heading center aka Social Icons --> 
 
-        <%= render 'layouts/footer' %>
-        
+        <%= render 'layouts/footer' %><!-- link to Footer page --> 
+
+        <!-- Slick carousel JS --> 
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -76,5 +77,6 @@
                             });
                         });
         </script>
+        <!-- End of Slick carousel JS --> 
 </body>
 </html>
