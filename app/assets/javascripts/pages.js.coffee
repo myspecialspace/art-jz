@@ -84,4 +84,6 @@ $(document).ready ->
           centerPadding: "40px"
           slidesToShow: 1
       }
-    ]      
+    ]  
+
+$("a[href*='" + location.pathname + "']").addClass("current");        

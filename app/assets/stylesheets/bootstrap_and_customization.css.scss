@@ -154,6 +154,10 @@ font-weight: 400;
 letter-spacing: 3px;
 }
 
+.navbar-nav li a.current{
+   color: #020708;
+   background: none;
+}
 /*----------------------------------------------------------------------------- 
 04=LAYOUT (JUMBOTRON CONTAINER)  
 -----------------------------------------------------------------------------*/
@@ -244,4 +248,5 @@ min-width: 100%;
 p.column { 
   margin-right: 15px; 
 } 
+
 
