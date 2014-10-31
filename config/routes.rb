@@ -1,5 +1,5 @@
 ArtJz::Application.routes.draw do
-  root "pages#home"
+  root "pages#home"  
   get "lessons" => "pages#lessons"
   get "gallery" => "pages#gallery"
   get "events" => "pages#events"
