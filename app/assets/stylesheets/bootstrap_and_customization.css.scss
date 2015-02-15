@@ -2,6 +2,7 @@
 Project Name: art-jz
 Client: art-jz.ru
 Author: Ekaterina Kuznetsova
+bootstrap_and_customization.css.scss  (sass)
 */
 
 
@@ -52,7 +53,7 @@ $jumbotron-bg:                                         rgba(255,255,255,0.9);
 
 
 @import 'bootstrap';
-@import 'slick';
+/*@import 'slick';*/
 
 .center {
      text-align: center;
@@ -161,7 +162,7 @@ letter-spacing: 3px;
 04=LAYOUT (JUMBOTRON CONTAINER)  
 -----------------------------------------------------------------------------*/
   
-.row {
+.row2 {
   color: white;
   margin-right: 15px;
   margin-left: 15px;
